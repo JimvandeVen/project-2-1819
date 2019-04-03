@@ -1,27 +1,25 @@
 "use strict";
 
 const express = require("express");
+const compression = require("compression");
+const fs = require("fs")
+const brotli = require('brotli');
+const shrinkRay = require('shrink-ray-current')
 
 const app = express();
 
 app.set("views", "view");
 app.set("view engine", "ejs");
-
 // app.use(compression());
-// app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(bodyParser.json());
-// app.use((req, res, next) => {
-//   res.setHeader('Cache-Control', 'max-age=' + 365 * 24 * 60 * 60); next();
-// });
+// app.use(shrinkRay({
+//     cache: () => false, cacheSize: false, filter: () => true, brotli: {
+//         quality: 4 // between 1 and 11
+//     }, zlib: {
+//         level: 6 // between 1 and 9
+//     }
+// }));
+app.use(shrinkRay());
 
-// app.use(function (req, res, next) {
-//   res.locals = {
-//     cssFilepath: revUrl("css/styles.css"),
-//     jsFilepath: revUrl("js/script.js"),
-//     serviceWorker: revUrl("service-worker.js")
-//   };
-//   next();
-// });
 app.use(express.static('public'))
 
 app.get("/", index)

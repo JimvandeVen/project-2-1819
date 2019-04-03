@@ -1,11 +1,30 @@
 # Project 2 @cmda-minor-web · 2018-2019
 
-- caching
-- critical css
-- defer unused css
-- visible text while webfonts are loading
-- review colors
-- PWA (service worker)
+1 Compression
+2 Font swapping
+3 Jpeg -> Webp
+4 Keyboard only
+5 Caching policy for resources
+
+## Compression
+
+### No compression
+HTML 106kb 
+CSS 279kb 
+JS 470kb 
+
+### GZIP
+HTML 17.1kb | 83.88% Compressed
+CSS 34.9kb | 87.5% Compressed
+JS 143kb | 69.58% Compressed
+
+### Brotli
+HTML 14.2kb | 86.61% Compressed
+CSS 27.6kb | 90.11% Compressed
+JS 123kb | 73.83% Compressed
+
+## Font swapping
+
 
 ## Aanbevelingen voor een robuste, toegankelijke en snelle web toepassing
 

@@ -1,0 +1,9 @@
+{
+  "name": "Volkswagen",
+  "short_name": "VW",
+  "theme_color": "#fff",
+  "background_color": "#fff",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/"
+}
