@@ -12,7 +12,7 @@ This readme contains the research I have done on the volkswagen.nl website conce
       - [No compression](#no-compression)
       - [GZIP](#gzip)
       - [Brotli](#brotli)
-   - [Font Swapping](#font-Swapping)
+   - [Font Swapping](#font-swapping)
    - [Keyboard Only](#keyboard-only)
    - [Caching Policy](#caching-policy)
 - [Checklist](#checklist)
@@ -27,11 +27,10 @@ I made a top 5 of different optimizations that are either huge gains or really e
 4. Keyboard only - Make sure to use 
 5. Caching policy for resources
 
-<<<<<<< HEAD
+
 ## Jpeg to Webp
-=======
+
 ### Compression
->>>>>>> 2eb1d2b0dcb4e0fc50994247955dc1886da83db8
 
 Compression is important in reducing the bite size for your website. The volkswagen website already uses GZIP to greatly reduce this. But with Brotli the bite size gets even more reduced. I placed tjis in my number one spot because, even though the reduction may not seem so big, it is really easy to implement. Implementing Brotli should not take longer than an hour.
 
@@ -50,7 +49,7 @@ Compression is important in reducing the bite size for your website. The volkswa
 - CSS 27.6kb | 90.11% Compressed
 - JS 123kb | 73.83% Compressed
 
-![Screenshot](screens/screenshot.png)
+![Compression](screens/compression.png)
 
 ### Font Swapping
 
@@ -66,16 +65,11 @@ With font swapping you make sure that it doesn't take to long before the text in
     font-display: swap;
 }
 ```
-![Screenshot](screens/screenshot.png)
-![Screenshot](screens/screenshot.png)
+![Fonstwap Before](screens/fontswap_before.png)
+![Fontswap After](screens/fontswap_after.png)
 ### Keyboard Only
 
 ### Caching Policy
-
-
-## Aanbevelingen voor een robuste, toegankelijke en snelle web toepassing
-
-Het project vindt plaats bij in ons eigen lokaal. Maandagochtend is om 9.30 uur de kickoff (bij de oprachtgever), vrijdag zijn de presentaties van de resultaten (bij de opdrachtgever). In een week bouwt iedere student een eigen prototype ter onderbouwing van aanbevelingen aan de opdrachtgevers (Valtech, Mirabeau & CMD Amsterdam). De aanbevelingen betreffen het verbeteren van toegankelijkheid en performance van de web sites / applicaties. Technieken geleerd bij [Browser Technologies](https://github.com/cmda-minor-web/browser-technologies-1819) en [Performance Matters](https://github.com/cmda-minor-web/performance-matters-1819) worden toegepast bij het bouwen van de de prototypes en et schrijven van de aanbevelingen.
 
 ## Checklist
 - [x] Rebuild client side app to server side app
