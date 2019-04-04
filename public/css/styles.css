@@ -1,4 +1,6 @@
 @charset "UTF-8";/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+
+
 html {
     font-family: sans-serif;
     line-height: 1.15;
@@ -14618,4 +14620,12 @@ html.is-in-experience-editor .trimline-cards-block__slider-row>.no-datasource.sc
     .row {
         max-width: none
     }
+}
+
+*:focus{
+    border: .1em solid black;
+}
+
+*{
+    border: .1em solid transparent;
 }
