@@ -15,7 +15,6 @@ This readme contains the research I have done on the volkswagen.nl website conce
    - [Font Swapping](#font-swapping)
    - [Keyboard Only](#keyboard-only)
    - [Caching Policy](#caching-policy)
-- [Checklist](#checklist)
 - [License](#license)
 
 ## Optimizations
