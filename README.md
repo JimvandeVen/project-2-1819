@@ -21,11 +21,11 @@ This readme contains the research I have done on the volkswagen.nl website conce
 ## Optimizations
 I made a top 5 of different optimizations that are either huge gains or really easy to implement (or both).
 
-1. Compression - The website already uses compression in the form of GZIP. But there is a better optimised way to do it with Brotli. Really easy to implement. 
-2. Font swapping - Showing fallback fonts until custom font is loaded. Really easy to implement.
-3. Jpeg -> Webp - Web friendly format for images. Makes them much, much smaller. Might take some time to implement.
-4. Keyboard only - Make sure to use 
-5. Caching policy for resources
+1. **Compression** - The website already uses compression in the form of GZIP. But there is a better optimised way to do it with Brotli. Really easy to implement. 
+2. **Font swapping** - Showing fallback fonts until custom font is loaded. Really easy to implement.
+3. **Jpeg -> Webp** - Web friendly format for images. Makes them much, much smaller. Might take some time to implement.
+4. **Keyboard only** - Make sure to use focus css so people who can't use their mouse can navigate the pages.
+5. **Caching policy** -  Cache the resources so the repeat view loads faster.
 
 ### Compression
 
@@ -81,7 +81,7 @@ For users that are, for whatever reason, unable to use their mouse the focus sel
 Now you have a border on everything that you are focused on. This might not be needed but it shows how important it is to know you are. Preferably a designer makes a nice focus design, which the developer will implement on the different elements.
 
 ### Caching Policy
-What I also noticed the website has many third party scripts that use bandwidth to load. Your own html, css and javascript files use caching headers. If at all possible it would be nice to use the same caching policy for those third party scripts. Be it by caching headers or by adding a service worker that caches those files. This way the repeat visits would be much, much faster.
+What I also noticed the website has many third party scripts that use bandwidth to load. Your own html, css and javascript files use caching headers. It would be nice to use the same caching policy for those third party scripts. Be it by caching headers or by adding a service worker that caches those files. This way the repeat visits would be much, much faster. Implementing this may take some effort though, if at all possible.
 
 ## License 
 See the [LICENSE file](https://github.com/Mennauu/web-app-from-scratch-18-19/blob/master/LICENSE) for license rights and limitations (MIT).
