@@ -78,6 +78,10 @@ For users that are, for whatever reason, unable to use their mouse the focus sel
     border: .1em solid transparent;
 }
 ```
+
+![Focus](screens/focus.png)
+
+Now you have a border on everything that you are focused on. This might not be needed but it shows how important it is to know you are. Prefferably a designer makes a nice focus design, which the developer will implement on the different elements.
 ### Caching Policy
 
 ## Checklist
