@@ -25,6 +25,7 @@ JS 123kb | 73.83% Compressed
 
 ## Font swapping
 
+## Jpeg to Webp
 
 ## Aanbevelingen voor een robuste, toegankelijke en snelle web toepassing
 
