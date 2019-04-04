@@ -68,7 +68,16 @@ With font swapping you make sure that it doesn't take to long before the text in
 ![Fonstwap Before](screens/fontswap_before.png)
 ![Fontswap After](screens/fontswap_after.png)
 ### Keyboard Only
+For users that are, for whatever reason, unable to use their mouse the focus selector in css is very important. It lets the user know where on the page they are. In the current website this works for the menu in the header and the footer. But it doesn't work for the different images that are also clickable. I fixed this, rather crudely, like so:
+```css
+*:focus {
+    border: .1em solid black;
+}
 
+* {
+    border: .1em solid transparent;
+}
+```
 ### Caching Policy
 
 ## Checklist
