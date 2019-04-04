@@ -27,10 +27,9 @@ I made a top 5 of different optimizations that are either huge gains or really e
 4. Keyboard only - Make sure to use 
 5. Caching policy for resources
 
-
 ### Compression
 
-Compression is important in reducing the bite size for your website. The volkswagen website already uses GZIP to greatly reduce this. But with Brotli the bite size gets even more reduced. I placed tjis in my number one spot because, even though the reduction may not seem so big, it is really easy to implement. Implementing Brotli should not take longer than an hour.
+Compression is important in reducing the bite size for your website. The Volkswagen website already uses GZIP to greatly reduce this. But with Brotli the bite size gets even more reduced. I placed this in my number one spot because, even though the reduction may not seem so big, it is really easy to implement. Implementing Brotli should not take longer than an hour.
 
 #### No compression
 - HTML 106kb 
@@ -51,7 +50,7 @@ Compression is important in reducing the bite size for your website. The volkswa
 
 ### Font Swapping
 
-With font swapping you make sure that it doesn't take to long before the text in your website becomes vissible. On slow 3G internet connections users may be forced to wait for more than 15 seconds before the custom fonts are loaded. If you dont use font swapping it will take this long before any text is vissible. With font swapping you can reduce this waiting time and show the fallback fonts untill the custom fonts are loaded. Making the perceived performance much better. To implement this you only need to add `font-display: swap;` to all `@font-face` rules like so:
+With font swapping you make sure that it doesn't take to long before the text in your website becomes visible. On slow 3G internet connections users may be forced to wait for more than 15 seconds before the custom fonts are loaded. If you don’t use font swapping it will take this long before any text is visible. With font swapping you can reduce this waiting time and show the fallback fonts until the custom fonts are loaded. Making the perceived performance much better. To implement this you only need to add `font-display: swap;` to all `@font-face` rules like so:
 
 ```css
 @font-face {
@@ -79,19 +78,10 @@ For users that are, for whatever reason, unable to use their mouse the focus sel
 
 ![Focus](screens/focus.png)
 
-Now you have a border on everything that you are focused on. This might not be needed but it shows how important it is to know you are. Prefferably a designer makes a nice focus design, which the developer will implement on the different elements.
-### Caching Policy
+Now you have a border on everything that you are focused on. This might not be needed but it shows how important it is to know you are. Preferably a designer makes a nice focus design, which the developer will implement on the different elements.
 
-## Checklist
-- [x] Rebuild client side app to server side app
-- [X] Add Compression
-- [x] Add Fontface Observer
-- [X] Set cache headers
-- [x] Implement Revisioning
-- [X] Add Service Worker
-- [X] Add Offline Page
+### Caching Policy
+What I also noticed the website has many third party scripts that use bandwidth to load. Your own html, css and javascript files use caching headers. If at all possible it would be nice to use the same caching policy for those third party scripts. Be it by caching headers or by adding a service worker that caches those files. This way the repeat visits would be much, much faster.
 
 ## License 
 See the [LICENSE file](https://github.com/Mennauu/web-app-from-scratch-18-19/blob/master/LICENSE) for license rights and limitations (MIT).
-
-
