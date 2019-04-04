@@ -28,8 +28,6 @@ I made a top 5 of different optimizations that are either huge gains or really e
 5. Caching policy for resources
 
 
-## Jpeg to Webp
-
 ### Compression
 
 Compression is important in reducing the bite size for your website. The volkswagen website already uses GZIP to greatly reduce this. But with Brotli the bite size gets even more reduced. I placed tjis in my number one spot because, even though the reduction may not seem so big, it is really easy to implement. Implementing Brotli should not take longer than an hour.
