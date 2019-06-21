@@ -1,8 +1,7 @@
 # Project 2 @cmda-minor-web · 2018-2019
 
 ## Introduction
-This readme contains the research I have done on the volkswagen.nl website concerning performance enhancement and accessibility.
-
+In the last 10 years website sizes have grown exponantionally. Especcially image sizes have grown alot.
 ![Screenshot](screens/screenshot.png)
 
 ## Table of Contents
